@@ -236,7 +236,7 @@ body {
   margin-bottom: 64px;
 }
 
-.portfolio-projects_list {
+.portfolio-projects__list {
   padding: 0;
   display: flex;
   justify-content: space-between;
