@@ -455,7 +455,7 @@ body {
   margin-left: 0;
 }
 
-.specialities-label {
+.specialities__label {
   position: absolute;
   color: white;
   text-transform: uppercase;
