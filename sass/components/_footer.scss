@@ -1,5 +1,13 @@
+/* footer */
+
 .footer-address {
     font-style: normal;
+
+  &  p {
+            padding: 20px 0 9px;
+            margin: 0;
+            /* display: inline-block; */
+        }
 }
 
 .footer {
@@ -11,29 +19,32 @@
 .footer-items {
     display: flex;
     align-items: baseline;
-}
 
-.footer-items__address {
+
+&__address {
     padding-right: 70px;
 }
-
+}
 .logo-txt--footer {
     margin-bottom: 20px;
     color: white;
     padding: 0;
 }
 
-.footer-address p {
-    padding: 20px 0 9px;
-    margin: 0;
-    /* display: inline-block; */
-}
 
 .footer__link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     line-height: 2;
     letter-spacing: 0.03em;
+
+    &:hover,
+    &:focus {
+            color: rgb(33, 150, 243);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+            outline: none;
+        }
 }
 
 .footer-items__socials p,
@@ -53,15 +64,15 @@
 
 .footer__social-item {
     margin: 0 5px;
-}
 
-.footer__social-item:first-child {
+
+&:first-child {
     margin-left: 0;
 }
 
-.footer__social-item:last-child {
+&:last-child {
     margin-right: 0;
-}
+}}
 
 .a-social-item {
     display: inline-flex;
@@ -69,20 +80,19 @@
     fill: white;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-}
-
-.a-social-item:hover,
-.a-social-item:focus {
+&:hover,
+&:focus {
     background-color: #2196f3;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
-}
+}}
+
 
 .newsletter {
     padding-left: 78px;
-}
 
-.newsletter__input {
+
+&__input {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -95,14 +105,14 @@
     padding: 14px 88.333px 14px 15px;
 }
 
-.newsletter__svg {
+&__svg {
     padding-left: 24px;
     display: flex;
-}
+}}
 
 .newsleter__button {
     margin-left: 12px;
-    background-color: var(--main-color);
+    background-color: rgb(33, 150, 243);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
@@ -118,22 +128,22 @@
     color: #ffffff;
 
     fill: white;
-}
 
-.newsleter__button:hover,
-.newsleter__button:focus {
+
+&:hover,
+&:focus {
     cursor: pointer;
     background-color: white;
-    color: var(--main-color);
+    color: rgb(33, 150, 243);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: var(--main-color);
+    fill: rgb(33, 150, 243);
     outline: none;
 }
 
-.newsleter__button:active {
-    background-color: var(--main-color);
+&:active {
+    background-color: rgb(33, 150, 243);
     color: white;
     fill: white;
-}
+}}

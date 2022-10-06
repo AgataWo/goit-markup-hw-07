@@ -1,11 +1,13 @@
-@import "_var";
+
+/* header */
+
 .section {
     padding: 94px 0;
 }
 
 .logo-txt-blue {
     text-decoration: none;
-    color: var(--main-color);
+    color: rgb(33, 150, 243);
 }
 
 .link-header {
@@ -13,21 +15,21 @@
     color: rgb(33, 33, 33);
     display: flex;
     align-items: center;
+
+    &:hover,
+    &:focus{
+            color: rgb(33, 150, 243);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+            outline: none;
+        }
 }
 
 .contact__link {
     color: #757575;
 }
 
-.link-header:hover,
-.link-header:focus,
-.footer__link:hover,
-.footer__link:focus {
-    color: var(--main-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    outline: none;
-}
 
 .header-container {
     display: flex;
@@ -53,6 +55,12 @@
     list-style: none;
     padding-left: 93px;
     position: relative;
+
+    & .nav-link {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
 }
 
 .nav__icon {
@@ -69,45 +77,47 @@
 .contact__item {
     display: flex;
     align-items: center;
-}
 
-.contact>.contact__item:not(:last-child) {
+&:not(:last-child) {
     margin-right: 0;
-}
+}}
 
-.nav-ul>.nav-ul__item:not(:last-child) {
-    margin-right: 0px;
-}
+
 
 .nav-ul__item {
     padding-right: 46px;
+
+    &:not(:last-child) {
+            margin-right: 0px;
+        }
 }
 
-.nav-ul .nav-link {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-}
+
 
 .mail-a {
     padding-right: 30px;
     padding-left: 10px;
     fill: #757575;
-}
 
-.mail-a:hover,
-.mail-a:focus,
-.tel-a:hover,
-.tel-a:focus {
-    fill: var(--main-color);
+
+&:hover,
+&:focus {
+    fill: rgb(33, 150, 243);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
-}
+}}
 
 .tel-a {
     padding-right: 0;
     padding-left: 10px;
     fill: #757575;
+
+    &:hover,
+    &:focus {
+            fill: rgb(33, 150, 243);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            outline: none;
+        }
 }
 
 /* animacje */
@@ -128,7 +138,7 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--first-color);
+    color: black;
     font-family: Raleway;
     list-style: none;
     text-decoration: none;
